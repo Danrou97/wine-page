@@ -87,16 +87,20 @@ header{
 .container-info h1{
     font-size: 5em;
     font-family: "Permanent Marker", cursive;
+    animation: left-move 1s ease-in;
+    
 }/*titel sweet grapes change font and size*/
 
 .container-info h2{
     font-size: 2em;
+    animation: right-move 1s ease-in;
 
 }
 
 .container-info .social-content li{
     list-style: none;
     margin: 20px;
+    animation: left-move 1s ease-in;
 }/*margin is for the distance of the icons*/
 
 .container-info .social-content i{
@@ -113,12 +117,28 @@ header{
     background-color: #78a841;
     border:none;
     color: #fff;
+    animation: right-move 1s ease-in;
 }/*border-r for round the button*/
 .container-info img{
    max-width: 100%;
    margin-top: 40px;
+   animation: up-move 1s ease-in;
 
 }/*max-w to make the  image change whit the page size*/
+
+.container-info .img-content img:hover{
+    filter: grayscale(60%);
+
+}
+.container-info .social-content i:hover{
+    transform: scale(1.5);
+
+}
+
+.menu ul li a:hover{
+    color: #78a841;
+
+}
 
 @media(max-width:570px){
 
@@ -173,3 +193,41 @@ header{
         font-size: 1.5em;
     }
 }/**/
+
+
+@keyframes left-move{
+
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes right-move{
+
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes up-move{
+
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
