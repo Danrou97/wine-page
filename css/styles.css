@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Permanent+Marker&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+} /* reset initial values   */
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color:#3c1053;
+
+}/*how to find the fonts of google fonts*/
+
+header{
+    width: 100%;
+}
+
+.header .main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navbar{
+    margin-top: 30px;
+
+}
+
+.navbar .brand {
+    display: flex;
+    margin: 20px 70px;
+    color:#78a841
+}/*the point must be separated by a space  */
+
+.navbar .navbar .brand .fa-wine-bottle{
+    font: size 1.6em; 
+
+}
+
+.navbar .brand h3{
+    font-size: 1.3em;
+    margin:5px 5px ;
+
+}/*change the world w&g and give a margin of 5 px */
+
+.menu ul{
+    display: flex;
+    justify-content:flex-end ;
+    margin: -50px 20px;
+}/*upload the menu and box text justyfile rigth  */
+
+.menu ul li{
+    list-style: none;
+    margin-right: 70px;
+
+}/*delete the points in the menu li */
+.menu ul li a{
+    color: #fff;
+    text-decoration: none;
+    font: size 1.3em ;
+
+
+}/* delete the line lower in the menu li*/
+.navbar .toggle-menu{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 28px;
+
+}/* change the position of the bar whit justify */
+
+
+.navbar .toggle-menu .fa-bars{
+    font-size: 1.8em;
+    cursor: pointer;
+    color:#fff;
+    display: none;/*delete for movil */
+}/*em means measueres relative html and cursor change to hand  */
+
+.container-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+}
+
+.container-info h1{
+    font-size: 5em;
+    font-family: "Permanent Marker", cursive;
+}/*titel sweet grapes change font and size*/
+
+.container-info h2{
+    font-size: 2em;
+
+}
+
+.container-info .social-content li{
+    list-style: none;
+    margin: 20px;
+}/*margin is for the distance of the icons*/
+
+.container-info .social-content i{
+ font-size: 1.3em; 
+   color: #78a841;
+
+}
+
+.container-info .btn{
+    font-size: 1.5em;
+    width: 200px;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: #78a841;
+    border:none;
+    color: #fff;
+}/*border-r for round the button*/
+.container-info img{
+   max-width: 100%;
+   margin-top: 40px;
+
+}/*max-w to make the  image change whit the page size*/
+
+@media(max-width:570px){
+
+    .navbar .brand i{
+        margin-left: -30px;
+    }
+    .navbar .toggle-menu .fa-bars{
+        display:block ;
+        margin:-65px 30px;
+
+    }
+
+    .navbar .menu ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: #3c1053;
+        position: fixed;
+        margin-top: 100px;
+        transform: translateX(-120%);
+        transition: 1s ease-in;
+    }
+
+    .navbar .menu .menu-on {
+        transform: translateX(0%);
+
+    }
+
+    .navbar .menu ul li{
+        margin: 30px;
+       
+        text-transform: uppercase;
+    }
+
+    .container-info .social-content i{
+        display: none;
+
+    }
+    .container-info {
+        flex-wrap: wrap-reverse;
+        margin: -50px 50px;
+    }/*flex is for change the text for the image one above the other */
+
+    .container-info h1{
+        font-size: 3.5em;
+        
+    }
+    .container-info h2{
+        font-size: 1.5em;
+    }
+}/**/
