@@ -140,6 +140,10 @@ header{
 
 }
 
+header .wave{
+    margin-top: -40px;
+}
+
 @media(max-width:570px){
 
     .navbar .brand i{
@@ -160,9 +164,10 @@ header{
         z-index: 1;
         background-color: #3c1053;
         position: fixed;
-        margin-top: 100px;
+        margin-top: 19px;
         transform: translateX(-120%);
         transition: 1s ease-in;
+        
     }
 
     .navbar .menu .menu-on {
@@ -188,9 +193,17 @@ header{
     .container-info h1{
         font-size: 3.5em;
         
+        
     }
-    .container-info h2{
+    .container-info h2 {
         font-size: 1.5em;
+    }
+    .container-info .img-content img {
+        margin-top: 60px;
+    }
+
+    header .wave{
+        margin-top: 250px;
     }
 }/**/
 
